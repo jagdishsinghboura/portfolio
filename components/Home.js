@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col m-3">
-        <div className="container flex flex-col md:flex-row items-center justify-evenly ml-6 mr-6 h-auto md:h-[420px]">a
+        <div className="container flex flex-col md:flex-row items-center justify-evenly ml-6 mr-6 h-auto md:h-[420px]">
           {/* Text Section */}
           <div className="flex flex-col items-center text-center md:text-start md:w-1/2 gap-4 p-3 order-2 md:order-1">
             <h1 className="text-3xl text-white font-extrabold m-3">
