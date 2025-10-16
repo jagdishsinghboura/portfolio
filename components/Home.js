@@ -56,7 +56,7 @@ const Home = () => {
         <div className="container flex flex-col md:flex-row items-center justify-evenly ml-6 mr-6 h-auto md:h-[420px]">
           {/* Text Section */}
           <div className="flex flex-col items-center text-center md:text-start md:w-1/2 gap-4 p-3 order-2 md:order-1">
-            <h1 className="text-3xl text-black dark:text-white font-extrabold m-3">
+            <h1 className="text-3xl text-black dark:text-white font-extrabold m-3 uppercase font-mono">
               Jagdish Singh Boura
             </h1>
 
@@ -95,7 +95,7 @@ const Home = () => {
         {/* Tech Stack Section */}
         <div className="w-full m-3">
           <div className="font-bold text-2xl p-2 m-1 ml-10  ">
-            <h1 className="">Tech Stack</h1>
+            <h1 className=" font-mono tracking-tight">Tech Stack</h1>
           </div>
           <div className="flex w-full items-center justify-center">
             <div className="flex w-full max-w-[800px] flex-wrap gap-2 p-2 justify-center">
@@ -117,10 +117,10 @@ const Home = () => {
               ].map((tech) => (
                 <button
                   key={tech}
-                  className="dark:bg-slate-900  bg-amber-100 text-black drop-shadow-2xl border-2
+                  className=" font-serif text-sm dark:bg-slate-900  bg-amber-100 text-black drop-shadow-2xl border-2
                   border-slate-900 
                   
-                  dark:text-white text-sm font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105 transform duration-200 cursor-pointer  shadow-2xl"
+                  dark:text-white  font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105 transform duration-200   shadow-2xl"
                 >
                   {tech}
                 </button>
