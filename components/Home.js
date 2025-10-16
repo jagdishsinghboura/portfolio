@@ -52,11 +52,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col m-3">
+      <div className="flex flex-col m-3 min-h-screen">
         <div className="container flex flex-col md:flex-row items-center justify-evenly ml-6 mr-6 h-auto md:h-[420px]">
           {/* Text Section */}
           <div className="flex flex-col items-center text-center md:text-start md:w-1/2 gap-4 p-3 order-2 md:order-1">
-            <h1 className="text-3xl text-white font-extrabold m-3">
+            <h1 className="text-3xl text-black dark:text-white font-extrabold m-3">
               Jagdish Singh Boura
             </h1>
 
@@ -66,7 +66,9 @@ const Home = () => {
 
             <button
               onClick={handleDownload}
-              className="px-6 py-3 w-full sm:w-auto text-xl text-white font-bold rounded-md bg-blue-500 hover:bg-blue-600 shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
+              className=" cursor-pointer px-6 py-3 w-full sm:w-auto text-xl text-black dark:text-white font-bold rounded-2xl  
+              border-b-1 shadow-2xl 
+             dark:bg-slate-900 bg-slate-50  dark:hover:shadow-blue-900  hover:shadow-blue-500/50 hover:scale-105 shadow-blue-900/50 border-b-slate-900 dark:border-b-slate-100 transform  transition-all duration-300 transform-border"
             >
               {" Resume Download >"}
             </button>
@@ -74,14 +76,17 @@ const Home = () => {
 
           {/* Image Section */}
           <div className="flex items-center justify-center md:order-2 order-1">
-            <div className="rounded-full border-4 border-blue-500 shadow-lg overflow-hidden w-[300px] h-[300px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] hover:cursor-pointer">
+            <div className="rounded-full border-4 border-indigo-300
+            object-cover md:object-contain
+            shadow-lg overflow-hidden  md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] hover:cursor-pointer">
               <Image
                 src="/jagdishSinghBoura.jpeg"
                 alt="photo"
                 width={300}
                 height={300}
                 objectFit="cover"
-                className="hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="w-40 h-40 md:w-72  md:h-72  hover:scale-105 transition-transform duration-300 ease-in-out transform object-center md:object-center 
+                "
               />
             </div>
           </div>
@@ -89,7 +94,9 @@ const Home = () => {
 
         {/* Tech Stack Section */}
         <div className="w-full m-3">
-          <h1 className="font-bold text-2xl p-2 m-1 ml-10">Tech Stack</h1>
+          <div className="font-bold text-2xl p-2 m-1 ml-10  ">
+            <h1 className="">Tech Stack</h1>
+          </div>
           <div className="flex w-full items-center justify-center">
             <div className="flex w-full max-w-[800px] flex-wrap gap-2 p-2 justify-center">
               {[
@@ -110,7 +117,10 @@ const Home = () => {
               ].map((tech) => (
                 <button
                   key={tech}
-                  className="bg-blue-500 text-white text-sm font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105"
+                  className="dark:bg-slate-900  bg-amber-100 text-black drop-shadow-2xl border-2
+                  border-slate-900 
+                  
+                  dark:text-white text-sm font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105 transform duration-200 cursor-pointer  shadow-2xl"
                 >
                   {tech}
                 </button>

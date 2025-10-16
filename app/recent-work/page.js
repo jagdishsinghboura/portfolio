@@ -28,8 +28,8 @@ const projectDetails=[
 
 const page = () => {
   return (
-    <div className="container flex flex-col justify-evenly ml-6 mr-6   relative  ">
-      <h1 className="text-3xl text-slate-200 font-bold text-center p-3 m-4">
+    <div className="container flex flex-col justify-evenly p-2   relative  ">
+      <h1 className="text-3xl text-slate-600 dark:text-slate-200 font-bold text-center p-3 m-4">
         MY PROJECTS
       </h1>
       <div className="flex justify-around items-center ">

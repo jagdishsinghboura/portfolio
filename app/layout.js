@@ -21,11 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  relative `}
         >
-        <Navbar/>
+       <div className="bg-slate-100 dark:bg-slate-900">
+         <Navbar/>
        
         {children}
+       </div>
       </body>
     </html>
   );
