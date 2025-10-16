@@ -25,7 +25,7 @@ const Navbar = () => {
 
 
   return (
-    <div   className={`w-full md:flex md:justify-center   sticky top-0  z-50 border-b-1 md:border-none p-2 dark:text-white text-black font-bold border-b-gray-500  bg-slate-100 dark:bg-slate-900   shadow-lime-600 `}>
+    <div   className={`w-full md:flex md:justify-center   sticky top-0  z-50 border-b-1 md:border-none p-2 dark:text-white text-black font-bold border-b-gray-500  bg-white dark:bg-slate-900   shadow-lime-600 `}>
       <div className="flex w-full justify-between items-end md:hidden  transform transition  ">
         <h2 className="text-4xl capitalize p-2 m-2 border-b-1 rounded-xl">portfolio</h2>
         <button
