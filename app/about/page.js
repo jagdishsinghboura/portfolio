@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="dark:bg-slate-900 bg-slate-200 min-h-screen">
+    <div className="dark:bg-slate-900 bg-slate-200 min-h-screen bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
 
     <div className="flex w-full md:flex-row flex-col  justify-center items-center  gap-8  p-5 
     ">
@@ -10,8 +10,8 @@ const page = () => {
         <h1 className="w-full  m-2 p-2 text-2xl font-bold">About Me </h1>
         <div className="flex flex-col gap-10 m-2 p-2">
           <div>
-            <h2 className="text-xl font-medium">Hi, I&#39;m Jagdish Singh Boura</h2>
-            <h3 className=" text-sm font-sans nav p-2 tracking-widest">
+            <h2 className="text-xl font-medium indent-4 overflow-auto">Hi, I&#39;m Jagdish Singh Boura</h2>
+            <h3 className=" text-sm font-sans nav p-2 tracking-widest indent-8">
               {" "}
               a passionate Full Stack Developer with expertise in building
               dynamic web applications using React, Next.js, Express.js, and
@@ -19,7 +19,7 @@ const page = () => {
               Tailwind CSS and implementing robust backend solutions with
               Node.js.
             </h3>
-            <p className=" text-sm font-sans  p-2 tracking-widest">
+            <p className=" text-sm font-sans  p-2 tracking-widest indent-4 text-wrap">
             I have hands-on experience in developing dynamic web applications with modern technologies. You can explore my projects in the Recent Work section to see my skills and expertise in action.
               </p>
           </div>
@@ -29,7 +29,7 @@ const page = () => {
         <h1 className="w-full  m-2 p-2 text-2xl font-bold">Education </h1>
         <div className="flex flex-col gap-10 m-2 p-2">
           <div>
-            <h2 className="text-xl font-mono ">2022-2025</h2>
+            <h2 className="text-xl font-mono oldstyle-nums ">2022-2025</h2>
             <h3 className=" text-md font-sans  p-2 tracking-wide">
               Bachelor Of Computer Application
             </h3>

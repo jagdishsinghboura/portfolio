@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased  relative `}
         >
-       <div className="bg-slate-100 dark:bg-slate-900">
+       <div className=" bg-linear-to-r from-slate-100 to-slate-200  dark:from-slate-800 dark:to-slate-900">
          <Navbar/>
        
         {children}
