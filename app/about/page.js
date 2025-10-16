@@ -10,7 +10,7 @@ const page = () => {
         <h1 className="w-full  m-2 p-2 text-2xl font-bold">About Me </h1>
         <div className="flex flex-col gap-10 m-2 p-2">
           <div>
-            <h2 className="text-xl font-medium">Hi, I'm Jagdish Singh Boura</h2>
+            <h2 className="text-xl font-medium">Hi, I&#39;m Jagdish Singh Boura</h2>
             <h3 className=" text-sm font-sans nav p-2 tracking-widest">
               {" "}
               a passionate Full Stack Developer with expertise in building
