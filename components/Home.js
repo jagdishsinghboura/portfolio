@@ -75,17 +75,17 @@ const Home = () => {
           </div>
 
           {/* Image Section */}
-          <div className="flex items-center justify-center md:order-2 order-1">
-            <div className="rounded-full border-4 border-indigo-300
-            object-cover md:object-contain
-            shadow-lg overflow-hidden  md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] hover:cursor-pointer sepia-0">
+          <div className="flex items-center justify-center md:order-2 order-1 mt-2">
+            <div className="rounded-full border-2 border-indigo-300 mt-4 md:w-68 md:h-68
+            
+            shadow-lg overflow-hidden w-40 h-40 hover:cursor-pointer sepia-0">
               <Image
-                src="/jagdishSinghBoura.jpeg"
-                alt="photo"
+                src="/jagdishSinghBoura.png"
+                alt="admin photo"
                 width={300}
                 height={300}
                 priority
-                className="w-40 h-40 md:w-72  md:h-72  hover:scale-105 transition-transform duration-300 ease-in-out transform object-center md:object-center 
+                className="w-full h-full hover:scale-105 transition-transform duration-300  ease-in-out transform object-fill rounded-full 
                 "
               />
             </div>
@@ -93,31 +93,65 @@ const Home = () => {
         </div>
 
         {/* Tech Stack Section */}
+        
         <div className="w-full m-3">
-          <div className="font-bold text-2xl p-2 m-1 ml-10  ">
-            <h1 className=" font-mono tracking-tight">Tech Stack</h1>
-          </div>
+          {/* <div className="font-bold text-2xl p-2 m-1 ml-10  ">
+            <h1 className=" font-mono tracking-tight">Tech</h1>
+          </div> */}
           <div className="flex w-full items-center justify-center">
-            <div className="flex w-full max-w-[800px] flex-wrap gap-2 p-2 justify-center">
+            <div className="flex w-full max-w-[90%] flex-wrap gap-2 p-2 justify-center text-xl" >
               {[
                 "React",
                 "Next.js",
+                "Express.js",
+                "Docker",
                 "MongoDB",
                 "Postgres",
-                "SQL",
-                "Express.js",
-                "Tailwind",
-                "Docker",
                 "Prisma",
+                "SQL",
+                "Tailwind",
                 "Java",
                 "C++",
                 "Python",
                 "Node.js",
                 "JavaScript",
+                "HTML5",
+                "CSS3",
+                "JSON"
               ].map((tech) => (
                 <button
                   key={tech}
-                  className=" font-serif text-sm dark:bg-slate-900  bg-amber-100 text-black drop-shadow-2xl border-2
+                  className="  text-sm  text-black drop-shadow-2xl  border-2
+                  border-slate-900 
+                  font-sans
+                  
+                  dark:text-white  font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105 transform duration-200   shadow-2xl"
+                >
+                  {tech}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full m-3">
+          {/* <div className="font-bold text-2xl p-2 m-1 ml-10  ">
+            <h1 className=" font-mono tracking-tight">Other</h1>
+          </div> */}
+          <div className="flex w-full items-center justify-center">
+            <div className="flex w-full max-w-[800px] flex-wrap gap-2 p-2 justify-center text-xl" >
+              {[
+                "Networking ",
+                "Communication ",
+                "Api Integration",
+                "Problem Solving",
+                "ObjectOriented Programing",
+                "Agile Development"
+                
+              ].map((tech) => (
+                <button
+                  key={tech}
+                  className=" font-serif text-sm  text-black drop-shadow-2xl border-2
                   border-slate-900 
                   
                   dark:text-white  font-medium p-2 px-4 rounded-2xl transition-all hover:scale-105 transform duration-200   shadow-2xl"

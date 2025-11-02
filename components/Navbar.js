@@ -65,7 +65,7 @@ const Navbar = () => {
           {/* <Link href="/contact" target="_blank" className="text-lg">
             <FaTwitter className="text-xl hover:text-blue-400 transition duration-300" />
           </Link> */}
-          <Link href="/https://github.com/jagdishsinghboura" target="_blank" className="text-lg">
+          <Link href="https://github.com/jagdishsinghboura" target="_blank" className="text-lg">
             <SiRefinedgithub className="text-2xl hover:text-slate-500 hover:scale-105 transition duration-300" />
           </Link>
         </div>

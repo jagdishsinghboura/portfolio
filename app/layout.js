@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  relative `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  relative  overflow-auto scrollbar-hide`}
         >
        <div className=" bg-linear-to-r from-slate-100 to-slate-200  dark:from-slate-800 dark:to-slate-900">
          <Navbar/>

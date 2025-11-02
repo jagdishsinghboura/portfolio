@@ -32,7 +32,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/ProjectCard.js"  ],
+, "components/ProjectCard.js", "app/recent-work/[id]/page.js"  ],
   "exclude": [
     "node_modules"
   ]
