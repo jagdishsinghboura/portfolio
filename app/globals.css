@@ -35,10 +35,34 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+
+
+.skill-tag {
+  @apply flex flex-col justify-center items-center gap-1 
+  dark:bg-gray-700 bg-slate-200 text-black dark:text-gray-200 px-4 py-2 rounded-xl text-sm font-medium
+  shadow-md transition-all duration-300 cursor-pointer border-2 font-sans dark:border-gray-600 border-slate-500;
+}
+
+.skill-tag:hover {
+  @apply dark:bg-gray-600 bg-slate-200 scale-105 shadow-xl border-blue-500;
+}
+

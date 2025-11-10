@@ -1,85 +1,61 @@
 import Link from "next/link";
 import React from "react";
+import BubbleCard from "./BubbleCard"
+import Image from "next/image";
 
+
+import { FaLaptopCode, FaLink } from "react-icons/fa";
 const ProjectCard = ({ id, heading, summary,
-  image, githubLink, liveLink }) => {
+  image,tech, githubLink, liveLink }) => {
   return (
-    <div  >
-      <div className="   max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 cursor-pointer  transform-3d transition-transform  duration-300
-      ">
-        <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-          {heading}
-        </h5>
-        <p className="mb-3 font-normal text-gray-500 dark:text-gray-400 line-clamp-4">{summary}</p>
-        <Link href={`/recent-work/${id}`}  rel="noopener noreferrer" className="inline-flex font-medium items-center text-blue-600 hover:underline py-2" >Click Here To See More...
-          <svg
-            className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+    <div className="mt-5">
+      
+      <div className="min-h-108 flex items-center justify-center ">
+        <BubbleCard>
+          <div className="relative z-10">
+            <Image
+              src={image}
+              alt="Example"
+              width={300}
+              height={300}
+              className="object-contain object-center h-40 w-full rounded-xl"
             />
-          </svg>
-        </Link >
-        <div className="flex flex-col">
-          <Link
-            href={githubLink}
-            target="_blank" rel="noopener noreferrer"
-            className="inline-flex font-medium items-center text-blue-600 hover:underline"
-          >
-            Link To The Github Project
-            <svg
-              className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 18"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-              />
-            </svg>
-          </Link>
-          {liveLink.length > 1 && (
-            <Link
-              href={liveLink}
-              target="_blank"
 
-              className="inline-flex font-medium items-center text-blue-600 hover:underline  mt-2"
-            >
-              Link To The Live Link
-              <svg
-                className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                />
-              </svg>
-            </Link>
-          )}
+            <h5 className="pt-3 text-xl font-semibold tracking-tight text-gray-900 dark:text-blue-600">
+              {heading}
+            </h5>
+
+            <p className="text-xs dark:text-white  font-sans p-1">
+              {summary}
+            </p>
+            <div className="flex flex-wrap gap-2 p-1 w-full">
+              {[...tech.split(",")].map((t) => (
+                <span
+                  key={t}
+                  className="animate-float text-xs px-1 py-1 rounded-full 
+                 bg-slate-900 border border-slate-700 text-white
+                 shadow-lg shadow-blue-500/10
+                 transition-all duration-300
+                 hover:shadow-blue-500/50 hover:scale-110"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="w-full flex justify-end items-center gap-3 group">
+              <Link href={githubLink} target="_blank" className="p-2 text-sm font-sans shadow-2xl flex flex-row items-center gap-1 cursor-pointer group-hover:scale-105  text-blue-400  bg-gray-700 rounded-md"> <FaLaptopCode/> code</Link>
+              <Link href={liveLink} target="_blank" className="p-2 text-sm font-sans shadow-2xl flex flex-row items-center gap-1 cursor-pointer group-hover:scale-105   bg-blue-700 rounded-md"> <FaLink/> live</Link>
+            </div>
 
 
-        </div>
+
+
+          </div>
+        </BubbleCard>
+
       </div>
+
+
     </div>
   );
 };

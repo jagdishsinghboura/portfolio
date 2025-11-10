@@ -93,6 +93,7 @@ export const projectDetails=[
                                     MyTask demonstrates end-to-end full-stack best practices: type safety, a modern stack with React, Express, Prisma, PostgreSQL, robust security with password hashing and JWT, and scalable stateless architecture. The project’s production readiness, consistent use of TypeScript, and developer-focused tools make it a model full-stack implementation.
                                 </p>`,
     image:"/todo_list.png",
+    tech:"react,react-router, redux, chart.js, react-icon, express ,nodeJs, jsonwebToken, prisma",
     githubLink:"https://github.com/jagdishsinghboura/mytask",
     liveLink:"https://mytask-rust.vercel.app/",
   },
@@ -212,10 +213,27 @@ export const projectDetails=[
                             <li><strong>Open for Expansion:</strong> Encourages community growth and enhancements</li>
                         </ul>`,
     image:"/thread_app.png",
+    tech:"nextjs,clerk, uploadthing, mongoose, tailwind , zod, react-icon",
     githubLink:"https://github.com/jagdishsinghboura/Threads-app",
     liveLink:"https://thread-app-phi.vercel.app/",
   },
+ 
   {
+    heading:"Animate Clone Frontend ",
+    summary:` The Animated-Website project is a responsive landing-page that clones the WizardZ digital marketing site to showcase advanced GSAP-powered animation skills
+repos.ecosyste.ms
+. It is built with HTML, CSS, and JavaScript and uses the GSAP (GreenSock) library to recreate the original site’s sleek, animated design with smooth, scroll-triggered effects. Core features include high-performance animations and a modern, responsive layout, demonstrating proficiency in contemporary front-end web development practices.`,
+    description:`
+    <h1 className='w-full text-3xl font-mono text-slate-300'>Animated Frontend</h1>
+    <p className='text-lg font-sans p-2  inset-7'>The Animated-Website project is a responsive landing-page that clones the WizardZ digital marketing site to showcase advanced GSAP-powered animation skills
+repos.ecosyste.ms
+. It is built with HTML, CSS, and JavaScript and uses the GSAP (GreenSock) library to recreate the original site’s sleek, animated design with smooth, scroll-triggered effects. Core features include high-performance animations and a modern, responsive layout, demonstrating proficiency in contemporary front-end web development practices.</p>`,
+    image:"/animated_website.png",
+    tech:"react,typescript, tailwind , react",
+    githubLink:"https://github.com/jagdishsinghboura/animated-website",
+    liveLink:"",
+  },
+   {
     heading:"Insta Clone  ",
     summary:" The instagram-clone repository appears to be a full-stack web application replicating core Instagram features (user signup/login, photo posts, likes, comments, follow/unfollow, etc.). While the specific jagdishsinghboura/instagram-clone code wasn’t directly accessible, similar Instagram clone projects use a modern JavaScript tech stack. For example, one such clone uses the MERN stack (MongoDB, Express, React, Node.js), and another uses React with TypeScript on the front end and Node/Express on the back end. These stacks typically allow users to register accounts, upload images to a feed, follow other users, like and comment on posts, and perform user searches – emulating Instagram’s core functionality.",
     description:`<div>
@@ -386,22 +404,9 @@ export const projectDetails=[
                         </p>
                     </div>`,
     image:"/instagram_clone.png",
+    tech:"react, express , nodejs, javascript,redux ,socket.io , tailwind ,cloudinary, jsonwebtoken,multer,bcrypt",
     githubLink:"https://github.com/jagdishsinghboura/instagram-clone",
     liveLink:"https://instagram-clone-rho-eight.vercel.app/",
-  },
-  {
-    heading:"Animate Clone Frontend ",
-    summary:` The Animated-Website project is a responsive landing-page that clones the WizardZ digital marketing site to showcase advanced GSAP-powered animation skills
-repos.ecosyste.ms
-. It is built with HTML, CSS, and JavaScript and uses the GSAP (GreenSock) library to recreate the original site’s sleek, animated design with smooth, scroll-triggered effects. Core features include high-performance animations and a modern, responsive layout, demonstrating proficiency in contemporary front-end web development practices.`,
-    description:`
-    <h1 className='w-full text-3xl font-mono text-slate-300'>Animated Frontend</h1>
-    <p className='text-lg font-sans p-2  inset-7'>The Animated-Website project is a responsive landing-page that clones the WizardZ digital marketing site to showcase advanced GSAP-powered animation skills
-repos.ecosyste.ms
-. It is built with HTML, CSS, and JavaScript and uses the GSAP (GreenSock) library to recreate the original site’s sleek, animated design with smooth, scroll-triggered effects. Core features include high-performance animations and a modern, responsive layout, demonstrating proficiency in contemporary front-end web development practices.</p>`,
-    image:"/animated_website.png",
-    githubLink:"https://github.com/jagdishsinghboura/animated-website",
-    liveLink:"",
   },
 
   
@@ -410,6 +415,7 @@ repos.ecosyste.ms
 //   heading:"My Task",
 //   content:"The MyTask project is a task management web application designed to help users organize and track their daily activities efficiently. It features functionalities such as task creation, updating, deletion, and marking tasks as completed. The project implements user authentication for secure access, ensuring personalized task management. Built with React, TypeScript, and Tailwind CSS on the frontend, and Node.js, Express.js, and Prisma on the backend, it follows modern web development practices. The application is deployed on Vercel for seamless accessibility. 🚀",
 //   image:"",
+// tech:"",
 //   githubLink:"https://github.com/jagdishsinghboura/mytask",
 //   liveLink:"https://mytask-rust.vercel.app/",
 // },
@@ -417,6 +423,7 @@ repos.ecosyste.ms
 //   heading:"My Listing ",
 //   content:"The Listing project is a backend application developed by jagdishsinghboura. It utilizes JavaScript (50.2%), EJS (27.5%), and CSS (22.3%) to manage and serve data effectively. The project structure includes directories such as controllers, models, routes, and views, indicating a well-organized MVC architecture. Additional folders like public and uploads suggest functionalities for serving static files and handling file uploads. Configuration files like .env and cloudConfig.js are present, highlighting the use of environment variables and cloud services.",
 //   image:"",
+// tech:"",
 //   githubLink:"https://github.com/jagdishsinghboura/Listing",
 //   liveLink:"",
 // },
@@ -424,6 +431,7 @@ repos.ecosyste.ms
 //   heading:"University-library",
 //   content:"The university-library-JB project, developed by jagdishsinghboura, is a web application designed to manage university library resources efficiently. Built with Next.js, it leverages modern web development practices for server-side rendering and seamless user experiences. The project's structure includes directories such as components, constants, database, and lib, indicating a modular and organized codebase. Configuration files like drizzle.config.ts, eslint.config.mjs, and tailwind.config.ts suggest the use of tools like Drizzle ORM, ESLint, and Tailwind CSS for database management, code linting, and styling, respectively. Deployment configurations point towards hosting on platforms like Vercel, ensuring scalability and reliability.",
 //   image:"",
+// tech:"",
 //   githubLink:"https://github.com/jagdishsinghboura/university-library-JB",
 //   liveLink:"https://university-library-jb.vercel.app/",
 // },
