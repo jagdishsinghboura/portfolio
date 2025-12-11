@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
+import GetSend from "@/components/GetSend";
 
 const page = () => {
   return (
@@ -12,12 +13,7 @@ const page = () => {
           <SocialMediaLinks  pageCall={"getintouch"}/>
           </div>
         </div>
-        <div className="w-full flex  flex-col justify-evenly  items-center mt-2 p-2 m-2 gap-6">
-            <input placeholder="your name " className="w-[75%]  outline-none font-sans bg-gray-400 text-white dark:text-black/50  dark:bg-gray-600 p-3 m-1 rounded-md "/>
-            <input placeholder="subject " className="w-[75%]  outline-none font-sans bg-gray-400 text-white dark:text-black/50  dark:bg-gray-600 p-3 m-1 rounded-md "/>
-            <textarea rows={3} placeholder="your message " className="w-[75%]  outline-none font-sans bg-gray-400 text-white dark:text-black/50  dark:bg-gray-600 p-3 m-1 rounded-md "/>
-            <button className="w-[60%] cursor-pointer hover:scale-105 transition-transform delay-300 text-xl font-sans bg-blue-600 text-nowrap rounded-md m-2 p-2 ">send message 📩</button>
-        </div>
+        <GetSend/>
 
       </div>
     </div>
